@@ -23,6 +23,11 @@ public class Student {
         Transaction t = new Transaction(month, day, -7);
         transactions.add(t);
     }
+    public void addBalance(int month, int day, int amount){
+        balance+=amount;
+        Transaction t = new Transaction(month, day, amount);
+        transactions.add(t);
+    }
 
     //return null if there are no transactions on that day
     public ArrayList<Transaction> getTransactionsByDate(int month, int day){
@@ -49,5 +54,8 @@ public class Student {
     }
     public int getID(){
         return id;
+    }
+    public double getBalance(){
+        return balance;
     }
 }
