@@ -1,6 +1,4 @@
-package MealPrep;
-
-public class Transaction {
+public class Transaction{
     private int month;
     private int day;
     private double amount;
@@ -14,17 +12,18 @@ public class Transaction {
     public int getMonth(){
         return month;
     }
+
     public int getDay(){
         return day;
     }
+
     public double getAmount(){
         return amount;
     }
-    public String toString(){
-        return "("+month + "/"+day+", $" + amount + ")";
-    }
 
-    
+    public String toString(){
+        return month + "/" + day + ": $" + amount;
+    }
 }
 
 // functions
