@@ -23,4 +23,8 @@ public class Manager {
     public void logMeal(int month, int day, int id){
         //loop through all students and find matching id
     }
+
+    public void addStudent(String myName){
+        students.add(new Student(myName));
+    }
 }

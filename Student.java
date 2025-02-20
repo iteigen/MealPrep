@@ -44,4 +44,10 @@ public class Student {
     public String toString(){
         return "Name: " + name + " ID: " + id + " Balance: " + balance + " Transactions: " + transactions.toString();
     }
+    public String getName(){
+        return name;
+    }
+    public int getID(){
+        return id;
+    }
 }
